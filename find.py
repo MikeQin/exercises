@@ -7,10 +7,8 @@ def find(list):
 
     print('inputs', list)
 
-    if len(list) == 0:
-        return list
-    elif len(list) == 1:
-        return [list[0], list[0]]
+    if len(list) < 2:
+        return "Invalid array"
 
     unique_sorted = []
     # remove dupliates
@@ -27,7 +25,7 @@ def find(list):
     return [second_smallest, second_largest]
 
 
-arr = [2, 4, 10, 20, 5, 2, 20, 4]
+arr = [2, 24, 4, 10, 20, 5, 2, 20, 4]
 print(find(arr))
 arr = [100]
 print(find(arr))
