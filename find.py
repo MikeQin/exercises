@@ -19,7 +19,7 @@ def find(list):
     unique_sorted.sort()
     print('unique & sorted', unique_sorted)
 
-    second_largest = unique_sorted[len(unique_sorted) - 2]
+    second_largest = unique_sorted[-2]
     second_smallest = unique_sorted[1]
 
     return [second_smallest, second_largest]

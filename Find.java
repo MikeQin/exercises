@@ -1,6 +1,6 @@
 import java.util.*;
 
-class FindSecondNumbers {
+class Find {
 
   public static void main(String[] args) {
     Integer[] arr = { 1, 2, 4, 10, 20, 20, 2, 4 };
