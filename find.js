@@ -2,7 +2,7 @@
 // Find second smallest and second largest numbers
 // from an array
 function find(arr) {
-  console.log(arr);
+  console.log('input:', arr);
 
   // validate
   if (arr.length < 2) {
@@ -10,10 +10,10 @@ function find(arr) {
   }
 
   // unique
-  let unique = [...new Set(arr)];
+  const unique = [...new Set(arr)];
   // sort
   unique.sort((a, b) => { return a - b });
-  console.log(unique);
+  console.log('unique & sorted:', unique);
 
   // find secondSmallest and secondLargest
   const secondSmallest = unique[1];
